@@ -1,2 +1,0 @@
-Welcome to PHP Programming.
-This is a file handling program.
