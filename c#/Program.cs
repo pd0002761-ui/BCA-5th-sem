@@ -1,23 +1,17 @@
-﻿using System;
-class Program
+namespace WinFormsApp1
 {
-    // Simple Method
-    static int Add(int a, int b)
+    internal static class Program
     {
-        return a + b;
-    }
-    static void Main()
-    {
-        // Arrays
-        int[] arr = { 50, 10, 30 };
-        Array.Sort(arr);
-        Console.WriteLine("Sorted Array: " + string.Join(", ", arr));
-        // Strings
-        string str = "bca college";
-        Console.WriteLine("Uppercase: " + str.ToUpper());
-        Console.WriteLine("Substring: " + str.Substring(0, 3));
-        // Simple Method
-        int sum = Add(4, 5);
-        Console.WriteLine("Sum = " + sum);
+        /// <summary>
+        ///  The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            // To customize application configuration such as set high DPI settings or default font,
+            // see https://aka.ms/applicationconfiguration.
+            ApplicationConfiguration.Initialize();
+            Application.Run(new Form1());
+        }
     }
 }
